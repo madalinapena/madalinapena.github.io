@@ -1,4 +1,4 @@
-var pisica = false
+var pisica = false;
 function modifica()
 {
 document.getElementById("id_salut").innerHTML="Hello";
