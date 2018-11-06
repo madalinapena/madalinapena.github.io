@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.11.06.3";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.11.06.4";
 
 window.addEventListener("deviceorientation", la_schimbare_gyro);
 
@@ -17,7 +17,7 @@ function la_schimbare_gyro(e)
  
  context.beginPath();
  context.arc(canvas.width / 2 + e.gamma/90*(canvas.width/2-R),
-              canvas.height/ 2+e.beta/90*(canvas.height/2-R),
+              canvas.height/ 2 + e.beta/90*(canvas.height/2-R),
   R,0,2 *Math.PI);
  
              context.stroke();
