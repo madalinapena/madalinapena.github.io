@@ -16,7 +16,7 @@ function la_schimbare_gyro(e)
  context.cleanRect(0,0,canvas.width, canvas.height);
  
  context.beginPath();
- context.arc(canvas.width / 2 + e.gamma/90* canvas.width/2-R),
+ context.arc(canvas.width / 2 + e.gamma/90*(canvas.width/2-R),
               canvas.height/ 2+e.beta/90*(canvas.height/2-R),
   R,0,2 *Math.PI);
  
