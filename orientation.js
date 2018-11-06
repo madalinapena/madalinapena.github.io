@@ -5,9 +5,9 @@ window.addEventListener("deviceorientation", la_schimbare_acc);
 
 function la_schimbare_acc(e)
 {
- document.getElementById("id_acc_x")=e.accelerationIncludingGravity.x;
- document.getElementById("id_acc_x")=e.accelerationIncludingGravity.y;
- document.getElementById("id_acc_x")=e.accelerationIncludingGravity.z;
+ document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.x;
+ document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.y;
+ document.getElementById("id_acc_x").innerHTML = e.accelerationIncludingGravity.z;
 function la_schimbare_gyro(e)
 {
  document.getElementById("id_x").innerHTML =e.beta;
