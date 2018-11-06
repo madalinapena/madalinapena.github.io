@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.11.06.7";
+document.getElementById("id_logic_version").innerHTML = "Logic version: 2018.11.06.8";
 
 window.addEventListener("deviceorientation", la_schimbare_gyro);
 window.addEventListener("deviceorientation", la_schimbare_acc);
@@ -9,9 +9,9 @@ function la_schimbare_acc(e)
  var acc_y = e.accelerationIncludingGravity.y;
  var acc_z = e.accelerationIncludingGravity.z;
  
-  document.getElementById("id_acc_x").innerHTML = "acc x="=acc_x;
-  document.getElementById("id_acc_x").innerHTML =  "acc y="=acc_y;
-  document.getElementById("id_acc_x").innerHTML =  "acc z="=acc_z;
+  document.getElementById("id_acc_x").innerHTML = "acc x="+acc_x;
+  document.getElementById("id_acc_y").innerHTML =  "acc y="+acc_y;
+  document.getElementById("id_acc_z").innerHTML =  "acc z="+acc_z;
  
  document.getElementById("id_rot_x").innerHTML=Mach.atan(acc_x/acc_z)*180/Math.PI;
   document.getElementById("id_rot_x").innerHTML=Mach.atan(acc_y/acc_z)*180/Math.PI;
