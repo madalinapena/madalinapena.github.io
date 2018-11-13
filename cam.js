@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML= "logic vertion:2018.11.13.1";
+document.getElementById("id_logic_version").innerHTML= "logic vertion:2018.11.13.2";
 
 function on_ok(stream)
 {
@@ -14,6 +14,6 @@ function on_error(e)
 function start()
 {
 	var p = {audio:true, video:true};
-	navigator.mediaDevices.getUserMedia(p). then().catch(on_error);
+	navigator.mediaDevices.getUserMedia(p). then(on_ok).catch(on_error);
 }	
 //---------------------------------	
