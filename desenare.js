@@ -1,5 +1,5 @@
 document.getElementById("id_logic_version").innerHTML = 
-		"Logic version = 2018.11.20.11";
+		"Logic version = 2018.11.20.12";
 		
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -86,4 +86,4 @@ function on_touch_end(e)
 	}
 }
 //-----------------------------------
-}
+
