@@ -1,5 +1,5 @@
 document.getElementById("id_logic_version").innerHTML = 
-		"Logic version = 2018.11.20.12";
+		"Logic version = 2018.11.20.13";
 		
 var canvas = document.getElementById("id_canvas");
 canvas.addEventListener("touchstart", on_touch);
@@ -64,7 +64,7 @@ function on_touch_move(e)
 			if(last_position_array[j].id == e.changedTouches.item(i).identifier)
 				break
 		context.moveTo(last_position_array[j].X - rect.left, last_position_array[j].Y - rect.top);
-		context.lineTo(hes.item(i).pageX - rect.left, 
+		context.lineTo(e.changedTouches.item(i).pageX - rect.left, 
 						e.changedTouches.item(i).pageY - rect.top);
 
 		last_position_array[j].X = e.changedTouches.item(i).pageX;		
