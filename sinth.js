@@ -1,9 +1,10 @@
-document.getElementById("id_logic_version").innerHTML="Logic version 2018.12.04.3";
+document.getElementById("id_logic_version").innerHTML="Logic version 2018.12.04.4";
 var synth = window.speechSynthesis;
 
 //-----------------------------------
 function afiseaza_voci()
 {
+		document.getElementById("id_voci").innerHTML ="";
 		var lista_voci = synth.getVoices();
 		
 		for (var i = 0; i < lista_voci.length; i++)  
