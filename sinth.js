@@ -1,4 +1,4 @@
-document.getElementById("id_logic_version").innerHTML="Logic version 2018.12.04.5";
+document.getElementById("id_logic_version").innerHTML="Logic version 2018.12.04.6";
 var synth = window.speechSynthesis;
 
 //-----------------------------------
@@ -18,11 +18,11 @@ function vorbeste()
 	enunt.text = document.getElementById("id_text").value;
 	enunt.lang = "en-US";
 	enunt.onend = sfarsit_vorbeste;
-	document.getElementById("id_button_vorbeste").disable = true;
+	document.getElementById("id_button_vorbeste").disabled = true;
 	synth.speak(enunt);
 }	
 //---------------------------------------
 function sfarsit_vorbeste()
 {
-		document.getElementById("id_button_vorbeste").disable = false;
+		document.getElementById("id_button_vorbeste").disabled = false;
 }
